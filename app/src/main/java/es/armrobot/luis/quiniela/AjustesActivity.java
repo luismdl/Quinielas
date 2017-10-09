@@ -1,6 +1,5 @@
 package es.armrobot.luis.quiniela;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,8 @@ import android.widget.Toast;
 
 public class AjustesActivity extends AppCompatActivity {
 
-    EditText p1,px;
+    EditText p1;
+    EditText px;
     Button aceptar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

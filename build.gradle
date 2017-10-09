@@ -11,6 +11,14 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+plugins {
+    id "org.sonarqube" version "2.5" }
+sonarqube {
+    properties {
+        property "sonar.projectName", "Quiniela"
+        property "sonar.projectKey", "Quiniela"
+    } }
+
 allprojects {
     repositories {
         jcenter()

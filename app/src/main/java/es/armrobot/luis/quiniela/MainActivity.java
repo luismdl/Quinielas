@@ -1,9 +1,7 @@
 package es.armrobot.luis.quiniela;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -21,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     Quiniela quiniela;
     //componentes graficos
-    TextView textView_informacion;
-    Button botonGenerar, botonLimpiar, botonAjustes;
+    TextView textViewInformacion;
+    Button botonGenerar;
+    Button botonLimpiar;
+    Button botonAjustes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         //inicializa quiniela
         quiniela=new Quiniela(0.6,0.2,0.25,0.25,0.25);
         //inicializa botones
-        textView_informacion=(TextView)findViewById(R.id.textView_informacion);
+        textViewInformacion=(TextView)findViewById(R.id.textView_informacion);
         botonAjustes=(Button)findViewById(R.id.botonAjustes);
         botonGenerar=(Button)findViewById(R.id.botonGenerar);
         botonLimpiar=(Button)findViewById(R.id.botonLimpiar);
@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
                         sb.setSpan(new ForegroundColorSpan(Color.BLACK),i,i+1,Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                     }
                 }
-                textView_informacion.setText(sb);
+                textViewInformacion.setText(sb);
                 break;
             case R.id.botonLimpiar:
-                textView_informacion.setText(R.string.text_main);
+                textViewInformacion.setText(R.string.text_main);
                 break;
             case R.id.botonAjustes:
                 Intent ajustes = new Intent(this, AjustesActivity.class);
