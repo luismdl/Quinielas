@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiniela</string>
+    <string name="text_main">Pulsa el boton Generar para crear una quiniela.</string>
+    <string name="generate">Generar</string>
+    <string name="clear">Limpiar</string>
+    <string name="settings">Ajustes</string>
+    <string name="accept">Aceptar</string>
+    <string name="settingsButton">Boton Ajustes</string>
+    <string name="text1">Suma probabilidades mayores que 1</string>
+    <string name="textEmpty">Campo vacio</string>
+</resources>
