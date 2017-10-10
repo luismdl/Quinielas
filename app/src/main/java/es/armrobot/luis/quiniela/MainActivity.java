@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent ajustes = new Intent(this, AjustesActivity.class);
                 startActivityForResult(ajustes,1);
                 break;
+            default:
+                break;
         }
 
 
